@@ -15,6 +15,8 @@ const dataSorted = [];
 data.sort(function (a, b) {
 	return a.localeCompare(b);
 });
+//OU
+data.sort((a, b) => return a.localeCompare(b));
 */
 //OU
 data.sort();
