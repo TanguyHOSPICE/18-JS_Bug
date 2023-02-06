@@ -1,3 +1,9 @@
+/**À partir de ce code, vous devrez retourner une liste d'objets au format {letter : 'A', names : ['Amandine', 'Armand']}.
+
+Ce code trie chaque nom du tableau data par ordre alphabétique, puis retourne un tableau (dataSorted) d'objets ayant comme propriétés letter et names.
+
+Copiez ce code dans un fichier HTML et exécutez-le dans votre navigateur. */
+
 // tableau de noms
 const data = ['Paul', 'Jean', 'Marie', 'Nicolas', 'Julie', 'Lola', 'Martin', 'Armand', 'Amandine'];
 
@@ -5,9 +11,13 @@ const data = ['Paul', 'Jean', 'Marie', 'Nicolas', 'Julie', 'Lola', 'Martin', 'Ar
 const dataSorted = [];
 
 // tri du tableau data par ordre alphabétique
+/*
 data.sort(function (a, b) {
-	return a - b;
+	return a.localeCompare(b);
 });
+*/
+//OU
+data.sort();
 
 // POUR CHAQUE nom du tableau data
 data.forEach(function (name) {
